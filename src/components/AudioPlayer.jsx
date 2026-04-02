@@ -58,7 +58,7 @@ export default function AudioPlayer() {
 
   return (
     <>
-      <audio ref={audioRef} src="/ballz.mp3" loop preload="auto" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}ballz.mp3`} loop preload="auto" />
 
       {/* Persistent mute/unmute toggle — bottom right */}
       {started && (
