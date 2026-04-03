@@ -13,18 +13,22 @@ const projects = [
     description: 'Buy & sell goods platform.',
     tags: ['React', 'Express', 'PostgreSQL'],
     status: null,
+    link: 'https://github.com/devilOper09/Market_place'
+    
   },
   {
     name: 'CHAT APP',
     description: 'Real-time messaging with rooms.',
     tags: ['Node.js', 'Socket.io'],
     status: null,
+    link:'https://chattapp-2-0x8b.onrender.com/'
   },
   {
-    name: 'WALLPAPER APP',
+    name: 'WALLPAPER APP(Doodle Drop)',
     description: 'API-powered wallpaper browser.',
     tags: ['React', 'REST API'],
     status: null,
+    link: 'https://wall-paper-app.vercel.app/'
   },
   {
     name: 'DRUM MACHINE',
@@ -69,6 +73,11 @@ function ProjectCard({ project, index }) {
         borderLeft: '2px solid rgba(255, 69, 0, 0.3)',
         transition: 'border-color 200ms ease, transform 200ms ease',
       }}
+            onClick={() => {
+  if (project.link) {
+    window.open(project.link, "_blank");
+  }
+}}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderLeftColor = 'rgba(255, 69, 0, 0.9)';
       }}
@@ -113,6 +122,7 @@ function ProjectCard({ project, index }) {
           </span>
         ))}
       </div>
+
     </motion.div>
   );
 }

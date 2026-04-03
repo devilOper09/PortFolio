@@ -89,7 +89,7 @@ export default function Hero() {
           className="mt-6 font-mono text-xs md:text-sm leading-relaxed max-w-md"
           style={{ color: 'rgba(240, 238, 230, 0.7)' }}
         >
-          I build things for the web. Fast, functional, and designed with intent.
+          I build things for the web; Fast, functional, and designed with intent.
           I also make art. Two modes, one person.
         </motion.p>
 
